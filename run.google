@@ -4,4 +4,4 @@ docker run -it --rm \
     -v /dev/snd:/dev/snd \
     -v $PWD/scripts/:/scripts/ \
     --privileged \
-    alxprd/tts-pico /scripts/speak_google "$1"
+    alxprd/tts-google /scripts/speak_google "$1"

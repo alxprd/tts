@@ -1,5 +1,5 @@
 FROM ubuntu
 
-RUN apt-get update
+RUN apt-get update && apt-get -y upgrade
 
-RUN apt-get install -y espeak
+RUN apt-get install -y mplayer
