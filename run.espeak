@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker run -it --rm \
+    -v /dev/snd:/dev/snd \
+    -v $PWD/scripts/:/scripts/ \
+    --privileged \
+    alxprd/tts-espeak /scripts/speak_espeak "$1"

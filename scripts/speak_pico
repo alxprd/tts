@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo $1
+pico2wave -w sample.wav "$1" && mplayer sample.wav
