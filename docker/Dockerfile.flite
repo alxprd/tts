@@ -2,4 +2,4 @@ FROM ubuntu:xenial
 
 RUN apt-get update
 
-RUN apt-get install -y festival
+RUN apt-get install -y flite

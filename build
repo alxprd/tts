@@ -1,8 +1,10 @@
 #!/bin/bash
 
+docker build -t alxprd/tts-espeak -f docker/Dockerfile.espeak ./docker
+
 docker build -t alxprd/tts-festival -f docker/Dockerfile.festival ./docker
 
-docker build -t alxprd/tts-espeak -f docker/Dockerfile.espeak ./docker
+docker build -t alxprd/tts-flite -f docker/Dockerfile.flite ./docker
 
 docker build -t alxprd/tts-google -f docker/Dockerfile.googletts ./docker
 
