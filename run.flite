@@ -3,5 +3,6 @@
 docker run -it --rm \
     -v /dev/snd:/dev/snd \
     -v $PWD/scripts/:/scripts/ \
+    -v $PWD/flite_voices/:/voices/ \
     --privileged \
     alxprd/tts-flite /scripts/speak_flite "$1"

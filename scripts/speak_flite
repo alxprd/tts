@@ -3,3 +3,4 @@
 echo $1
 
 flite -t "$1"
+flite -voice /voices/cmu_us_aup.flitevox -t "$1"
